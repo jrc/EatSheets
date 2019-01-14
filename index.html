@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+<h1>Eat Sheets</h1>
+
 <ul>
 {% for cuisine in site.cuisines %}
   <li>
-    <a href="{{ cuisine.url }}">{{ cuisine.title }}</a>
+    <span><a href="{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</span>
     <p>{{ cuisine.description }}</p>
   </li>
 {% endfor %}

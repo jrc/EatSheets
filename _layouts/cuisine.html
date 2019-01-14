@@ -4,15 +4,29 @@ layout: default
 <ul>
 {% for dish in page.dishes %}
   <li>
-    <h1>{{ dish.name }}</h1>
-    <img src="../{{ page.img_path }}/{{ dish.image }}" width=160>
-    {% if dish.tts_utterance %}
-    <button onclick="speak('{{ dish.tts_utterance }}', '{{ dish.lang }}');">speak</button>
+    <h3>{{ dish.name }}</h3>
+
+    {% if dish.alt %}
+    <p>name_alt: {{ dish.alt }}</p>
     {% endif %}
-    <p>{{ dish.summary }} <a href="{{ dish.wikipedia_en }}">Wikipedia</a></p>
-    <!-- {% if dish.alt %}
-    <p>alt: {{ dish.alt }}</p>
-    {% endif %} -->
+    
+    {% if dish.image %}
+    <img src="../{{ page.img_path }}/{{ dish.image }}" width=160>
+    {% endif %}
+
+    {% for lang in dish.lang %}
+    <button onclick="speak('{{ dish.name_tts_utterance }}', '{{ lang }}');">speak {{ lang }}</button>
+    {% endfor %}
+    
+    <p>
+      {{ dish.summary }}
+      {% if dish.wikipedia_en %}
+      [<a href="{{ dish.wikipedia_en }}">Wikipedia</a>]
+      {% endif %}
+    </p>
+
+    <p>{{ dish.notes }}</p>
+    
     {% if dish.dietary_restrictions %}
     <p>May contain {{ dish.dietary_restrictions }}.</p>
     {% endif %}
