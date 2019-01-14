@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<ul>
+{% for cuisine in site.cuisines %}
+  <li>
+    <a href="{{ cuisine.url }}">{{ cuisine.title }}</a>
+    <p>{{ cuisine.description }}</p>
+  </li>
+{% endfor %}
+</ul>

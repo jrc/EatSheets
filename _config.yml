@@ -1,1 +1,13 @@
-theme: jekyll-theme-cayman
+title: Eat Sheets
+author: John Chang
+url: https://eatsheets.org
+
+collections:
+  cuisines:
+    output: true
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

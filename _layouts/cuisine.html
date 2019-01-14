@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<ul>
+{% for dish in page.dishes %}
+  <li>
+    <h1>{{ dish.name }}</h1>
+    <img src="../{{ page.img_path }}/{{ dish.image }}" width=160>
+    {% if dish.tts_utterance %}
+    <button onclick="speak('{{ dish.tts_utterance }}', '{{ dish.lang }}');">speak</button>
+    {% endif %}
+    <p>{{ dish.summary }} <a href="{{ dish.wikipedia_en }}">Wikipedia</a></p>
+    <!-- {% if dish.alt %}
+    <p>alt: {{ dish.alt }}</p>
+    {% endif %} -->
+    {% if dish.dietary_restrictions %}
+    <p>May contain {{ dish.dietary_restrictions }}.</p>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<script>
+  function speak(s, lang) {
+    let msg = new SpeechSynthesisUtterance(s);
+    msg.lang = lang;
+    window.speechSynthesis.speak(msg);
+  }
+</script>
