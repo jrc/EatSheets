@@ -4,10 +4,10 @@ layout: default
 <ul>
 {% for dish in page.dishes %}
   <li>
-    <h3>{{ dish.name }}</h3>
+    <h2>{{ dish.name }}</h2>
 
-    {% if dish.alt %}
-    <p>name_alt: {{ dish.alt }}</p>
+    {% if dish.name_alt %}
+    <p>alt: {{ dish.name_alt }}</p>
     {% endif %}
     
     {% if dish.image %}

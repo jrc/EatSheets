@@ -7,7 +7,7 @@ permalink: /wurst/
 description: "In Germany, a long tradition of sausage-making exists; more than 1,500 different types of sausage (German: Wurst) are made."
 dishes:
   - name: currywurst
-    tts_utterance: currywurst
+    name_tts_utterance: currywurst
     lang: de-DE
     summary: steamed then fried Bratwurst, typically cut into slices, and seasoned with curry ketchup
     image: 440px-Currywurst_&_Pommes_frites.jpg
@@ -15,7 +15,7 @@ dishes:
     dietary_restrictions: pork
 
   - name: Weisswurst
-    tts_utterance: Weißwurst
+    name_tts_utterance: Weißwurst
     lang: de-DE
     summary: a traditional Bavarian sausage made from minced veal and pork back bacon, flavored with parsley, lemon, mace, onions, ginger, and cardamom
     region: Bavaria, Germany
@@ -26,7 +26,7 @@ dishes:
 
   - name: Vienna sausage
     name_alt: "Wiener Würstchen, Wiener; Frankfurter Würstel, Würstl; Wienerli; Wienerle, Saitenwurst"
-    tts_utterance: Wiener Würstchen
+    name_tts_utterance: Wiener Würstchen
     lang: de-DE
     summary: a thin, parboiled and often lightly smoked sausage; similar to North American "hot dogs" but usually longer and thinner
     image: 440px-Frankfurter_wuerstchen.jpg
@@ -34,7 +34,7 @@ dishes:
     dietary_restrictions: pork, beef
 
   - name: Nürnberger Bratwurst
-    tts_utterance: Nürnberger Bratwurst
+    name_tts_utterance: Nürnberger Bratwurst
     lang: de-DE
     summary: small, thin bratwurst from Nuremberg, typically seasoned with fresh marjoram and grilled over a beechwood fire
     region: Nuremberg, Germany
@@ -44,7 +44,7 @@ dishes:
     dietary_restrictions: pork
     
   - name: Thüringer Rostbratwurst
-    tts_utterance: Thüringer Rostbratwurst
+    name_tts_utterance: Thüringer Rostbratwurst
     lang: de-DE
     summary: bratwurst from Thuringia, seasoned with caraway, marjoram, and garlic
     region: Thuringia, Germany
@@ -54,7 +54,7 @@ dishes:
     dietary_restrictions: pork
   
   - name: Bockwurst
-    tts_utterance: Bockwurst
+    name_tts_utterance: Bockwurst
     lang: de-DE
     summary: sausage made from ground veal and pork, flavored with salt, white pepper and paprika
     image: 460px-Bockwurst_.jpg
@@ -62,7 +62,7 @@ dishes:
     dietary_restrictions: veal, pork
 
   - name: Knackwurst
-    tts_utterance: Knackwurst
+    name_tts_utterance: Knackwurst
     lang: de-DE
     summary: sausage of northern German origin, often served with mustard and half a slice of bread
     image: Knackwurst_in_Hamburg.jpg
@@ -70,7 +70,7 @@ dishes:
 
   - name: Blutwurst
     name_alt: Schwarzwurst
-    tts_utterance: Blutwurst
+    name_tts_utterance: Blutwurst
     lang: de-DE
     summary: sausage made from pork rind, pork blood, and regionally different fillers such as barley
     image: Blutwurst.jpg

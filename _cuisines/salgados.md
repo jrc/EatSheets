@@ -8,7 +8,7 @@ description: Salgados (literally "salties" in Portuguese) are baked or deep-frie
 dishes:
   - name: pastel de bacalhau (Lisbon and Brazil); bolinho de bacalhau (N. Portugal)
     name_alt: bolo de bacalhau
-    tts_utterance: pastel de bacalhau; bolinho de bacalhau
+    name_tts_utterance: pastel de bacalhau; bolinho de bacalhau
     lang: pt-PT
     summary: a baked or deep-fried snack made of salt cod, potatoes, eggs, parsley, and onion
     image: 440px-Bolinho_de_bacalhau.jpg
@@ -16,7 +16,7 @@ dishes:
     dietary_restrictions: egg
 
   - name: croquete
-    tts_utterance: croquete
+    name_tts_utterance: croquete
     lang: pt-PT
     summary: a breaded baked or deep-fried snack with a cylindrical shape, often made of minced beef
     image: 360px-Croquettes_with_salad.jpg
@@ -25,7 +25,7 @@ dishes:
 
   - name: rissole
     name_alt: risole
-    tts_utterance: rissole
+    name_tts_utterance: rissole
     lang: pt-PT
     summary: a baked or deep-fried snack with a half-moon shape, often filled with shrimp in Béchamel sauce
     image: 360px-Risole1.JPG
@@ -33,14 +33,14 @@ dishes:
     dietary_restrictions: shrimp or beef
      
   - name: empada
-    tts_utterance: empada
+    name_tts_utterance: empada
     lang: pt-PT
     summary: a small baked savory pie, often filled with chicken
     image: Empadinhas.jpg
     dietary_restrictions: chicken
      
   - name: coxinha
-    tts_utterance: coxinha
+    name_tts_utterance: coxinha
     lang: pt-PT
     image: 440px-Uma_coxinha.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Coxinha
@@ -48,7 +48,7 @@ dishes:
     dietary_restrictions: chicken
       
   - name: chamuça
-    tts_utterance: chamuça
+    name_tts_utterance: chamuça
     lang: pt-PT
     summary: Indian samosa; a baked or deep-fried snack with a triangular shape, often with chicken or vegetable filling
     image: 500px-Chamuças.jpg

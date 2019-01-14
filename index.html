@@ -6,7 +6,7 @@ layout: default
 <ul>
 {% for cuisine in site.cuisines %}
   <li>
-    <span><a href="{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</span>
+    <h2><a href="{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h2>
     <p>{{ cuisine.description }}</p>
   </li>
 {% endfor %}
