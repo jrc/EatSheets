@@ -4,12 +4,12 @@ title: Ethiopian
 flags: 🇪🇹
 img_path: "assets/img/ethiopian"
 permalink: /ethiopian/
-description: Ethiopian cuisine characteristically consists of vegetable and often very spicy meat dishes. This is usually in the form of wat, a thick stew, served atop injera, a large sourdough flatbread, which is about 50 centimeters in diameter and made out of fermented teff flour.
+description: Ethiopian cuisine characteristically consists of vegetable and often spicy meat dishes, typically in the form of <i>wat</i> (stew) served atop <i>injera</i> (flatbread).
 dishes:
   - name: wat (ወጥ)
     name_alt: we̠t’, wot
-    summary: a meat or vegetable stew, prepared with onions, spices, and niter kibbeh (seasoned clarified butter)
-    notes: The mainstay of Ethiopian cuisine, eaten with injera (sourdough flatbread made of teff flour).
+    summary: a thick meat or vegetable stew, prepared with onions, spices, and niter kibbeh (seasoned clarified butter)
+    notes: The mainstay of Ethiopian cuisine, eaten with <i>injera</i> (sourdough flatbread made of teff flour).
     image: 500px-Ethiopian_wat.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Wat_(food)
     dietary_restrictions: meat

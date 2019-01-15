@@ -4,7 +4,7 @@ title: South Indian
 flags: 🇮🇳
 img_path: "assets/img/southindian"
 permalink: /southindian/
-description: South Indian cuisine is characterized by the presence of rice as a staple food, the use of lentils and spices, dried red chilies and fresh green chilies, coconut, and native fruits and vegetables including tamarind, plantain, snake gourd, garlic, and ginger.
+description: South Indian cuisine is characterized by the presence of rice as a staple food and the use of lentils, spices, chilies, and native fruits and vegetables such as coconut, tamarind, plantain, and snake gourd.
 wikipedia_en: https://en.wikipedia.org/wiki/South_Indian_cuisine
 dishes:
   - name: chapati (चपाती)

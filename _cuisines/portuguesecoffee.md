@@ -4,7 +4,7 @@ title: Portuguese Coffee
 flags: 🇵🇹
 img_path: "assets/img/portuguesecoffee"
 permalink: /portuguesecoffee/
-description: Coffee is an integral part of life in Portugal, with cafés and pastry shops found in every corner of the country. Coffee drinks are typically espresso-based, rather than drip-based.
+description: Coffee is an integral part of life in Portugal, with cafés and pastry shops found in practically every corner of the country. Coffee drinks are espresso-based, rather than drip-based.
 dishes:
   - name: (um) café
     name_tts_utterance: um café

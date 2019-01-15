@@ -4,7 +4,7 @@ title: Salgados
 flags: 🇵🇹🇧🇷
 img_path: "assets/img/salgados"
 permalink: /salgados/
-description: Salgados (literally "salties" in Portuguese) are baked or deep-fried savory snacks found in bars and cafés throughout Portugal and Brazil.
+description: In Portugal and Brazil, salgados (literally “salties” in Portuguese) are baked or deep-fried savory snacks found in bars and cafés everywhere.
 dishes:
   - name: pastel de bacalhau [Lisbon, Brazil]; bolinho de bacalhau [N. Portugal]
     name_alt: bolo de bacalhau
