@@ -7,7 +7,7 @@ permalink: /dimsum/
 description: Dim sum is a style of Chinese cuisine, particularly Cantonese, prepared as small bite-sized portions of food served in small steamer baskets or on small plates.
 wikipedia_en: https://en.wikipedia.org/wiki/Dim_sum
 dishes:
-  - name: "har gow (simplified: 虾饺 / traditional: 蝦餃)"
+  - name: 虾饺/蝦餃 (har gow)
     name_alt: ha gow
     name_tts_utterance: 虾饺
     lang:
@@ -18,7 +18,7 @@ dishes:
     summary: steamed dumpling filled with shrimp
     dietary_restrictions: shrimp, pork fat
     
-  - name: "shu mai (simplified: 烧卖 / traditional: 燒賣)"
+  - name: 烧卖/燒賣 (shu mai)
     name_alt: shaomai, shui mai, shu mai, sui mai, shui mei, siu mai, shao mai, siew mai, siomay
     name_tts_utterance: 烧卖
     lang:
@@ -29,7 +29,7 @@ dishes:
     summary: steamed dumpling filled with pork and shrimp
     dietary_restrictions: pork, shrimp
     
-  - name: "steamed tofu skin roll (simplified: 鲜竹卷 / traditional: 鮮竹捲)"
+  - name: 鲜竹卷/鮮竹捲 (steamed tofu skin roll)
     name_tts_utterance: "鲜竹卷"
     lang:
       - zh-HK
@@ -39,7 +39,7 @@ dishes:
     summary: steamed tofu skin filled with various ingredients, often bamboo shoots
     dietary_restrictions: pork
     
-  - name: "rice noodle roll (simplified: 肠粉 / traditional: 腸粉)"
+  - name: 肠粉/腸粉 (rice noodle roll)
     name_alt: jyu cheung fan, chee cheong fun
     name_tts_utterance: 肠粉
     lang:
@@ -50,7 +50,7 @@ dishes:
     summary: steamed rice noodle skin filled with various ingredients, often shrimp, beef, or Char siu (barbecued) pork
     dietary_restrictions: meat or shrimp
 
-  - name: cha siu bao (叉燒包)
+  - name: 叉燒包 (cha siu bao)
     name_alt: char siu bao
     name_tts_utterance: 叉燒包
     lang:
@@ -61,7 +61,7 @@ dishes:
     summary: steamed or baked bun filled with Char siu (barbecued) pork
     dietary_restrictions: pork
 
-  - name: "turnip cake (simplified: 萝卜糕 / traditional: 蘿蔔糕)"
+  - name: 萝卜糕/蘿蔔糕 (turnip cake)
     name_alt: radish cake, carrot cake (Singapore)
     name_tts_utterance: 萝卜糕
     lang:
@@ -71,7 +71,7 @@ dishes:
     wikipedia_en: https://en.wikipedia.org/wiki/Turnip_cake
     summary: pan-fried cake made with shredded Chinese radish and rice flour
     
-  - name: "lo mai gai (simplified: 糯米鸡 / traditional: 糯米雞)"
+  - name: 糯米鸡/糯米雞 (lo mai gai)
     name_tts_utterance: 糯米鸡
     lang:
       - zh-HK
@@ -81,7 +81,7 @@ dishes:
     summary: glutinous rice filled with chicken, Chinese mushrooms, Chinese sausage, sometimes dried shrimp or salted egg, wrapped in a dried lotus leaf and steamed
     dietary_restrictions: chicken, pork, shrimp, egg
     
-  - name: "egg tart (simplified: 蛋挞 / traditional: 蛋撻)"
+  - name: 蛋挞/蛋撻 (egg tart)
     name_tts_utterance: 蛋挞
     lang:
       - zh-HK
@@ -91,7 +91,7 @@ dishes:
     summary: small baked pastry filled with egg custard
     dietary_restrictions: gluten (flour), dairy, egg
     
-  - name: sesame ball (煎堆; 芝麻球)
+  - name: 煎堆 or 芝麻球 (sesame ball)
     name_tts_utterance: 煎堆; 芝麻球
     lang:
       - zh-HK
@@ -100,7 +100,7 @@ dishes:
     wikipedia_en: https://en.wikipedia.org/wiki/Jian_dui
     summary: deep-fried glutinous rice pastry coated with sesame seeds and often filled with lotus paste or sweet bean paste
 
-  - name: mango pudding (芒果布丁)
+  - name: 芒果布丁 (mango pudding)
     name_tts_utterance: 芒果布丁
     lang:
       - zh-HK
