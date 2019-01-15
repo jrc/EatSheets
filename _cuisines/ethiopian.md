@@ -12,7 +12,7 @@ dishes:
     notes: The mainstay of Ethiopian cuisine, eaten with <i>injera</i> (sourdough flatbread made of teff flour).
     image: 500px-Ethiopian_wat.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Wat_(food)
-    dietary_restrictions: meat
+    dietary_warnings: 🥩
     
   - name: gomen wat
     summary: boiled collard greens with garlic, onions and sometimes ginger
@@ -28,12 +28,12 @@ dishes:
     summary: meat sautéed with vegetables
     image: 440px-Tibs_in_Yod_Abyssinia.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Ethiopian_cuisine#Tibs
-    dietary_restrictions: meat
+    dietary_restrictions: 🥩
     
   - name: kitfo (ክትፎ)
     summary: minced beef, seasoned with mitmita (spice blend) and niter kibbeh (seasoned clarified butter), often served raw
     image: 440px-Kitfo.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Kitfo
-    dietary_restrictions: beef
+    dietary_restrictions: 🥩
 
 ---

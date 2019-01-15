@@ -12,7 +12,7 @@ dishes:
     summary: steamed then fried Bratwurst, typically cut into slices, and seasoned with curry ketchup
     image: 440px-Currywurst_&_Pommes_frites.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Currywurst
-    dietary_restrictions: pork
+    dietary_restrictions: 🐷
 
   - name: Weisswurst
     name_tts_utterance: Weißwurst
@@ -22,7 +22,7 @@ dishes:
     notes: Traditionally, Weißwürste may only be served until midday because preservatives are not used, the meat is not smoked, and hence the sausage is made fresh every day.
     image: 440px-Weißwurst-1.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Weisswurst
-    dietary_restrictions: pork
+    dietary_restrictions: 🐷
 
   - name: Vienna sausage
     name_alt: "Wiener Würstchen, Wiener; Frankfurter Würstel, Würstl; Wienerli; Wienerle, Saitenwurst"
@@ -31,7 +31,7 @@ dishes:
     summary: a thin, parboiled and often lightly smoked sausage; similar to North American "hot dogs" but usually longer and thinner
     image: 440px-Frankfurter_wuerstchen.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Vienna_sausage
-    dietary_restrictions: pork, beef
+    dietary_restrictions: 🐷🥩
 
   - name: Nürnberger Bratwurst
     name_tts_utterance: Nürnberger Bratwurst
@@ -41,7 +41,7 @@ dishes:
     notes: The denominations Nürnberger Bratwurst and Nürnberger Rostbratwurst are Protected Geographical Indications (PGI) under EU law.
     image: 440px-Bratwurst_Glöckl.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Bratwurst
-    dietary_restrictions: pork
+    dietary_restrictions: 🐷
     
   - name: Thüringer Rostbratwurst
     name_tts_utterance: Thüringer Rostbratwurst
@@ -51,7 +51,7 @@ dishes:
     notes: The Thüringer Rostbratwurst has protected geographical indication (PGI) status under EU law.
     image: 440px-Thüringer_Rostbratwurst.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Thuringian_sausage
-    dietary_restrictions: pork
+    dietary_restrictions: 🐷
   
   - name: Bockwurst
     name_tts_utterance: Bockwurst
@@ -59,7 +59,7 @@ dishes:
     summary: sausage made from ground veal and pork, flavored with salt, white pepper and paprika
     image: 460px-Bockwurst_.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Bockwurst
-    dietary_restrictions: veal, pork
+    dietary_restrictions: 🥩🐷
 
   - name: Knackwurst
     name_tts_utterance: Knackwurst
@@ -67,6 +67,7 @@ dishes:
     summary: sausage of northern German origin, often served with mustard and half a slice of bread
     image: Knackwurst_in_Hamburg.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Knackwurst
+    dietary_restrictions: 🥩🐷
 
   - name: Blutwurst
     name_alt: Schwarzwurst
@@ -75,6 +76,6 @@ dishes:
     summary: sausage made from pork rind, pork blood, and regionally different fillers such as barley
     image: Blutwurst.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Blood_sausage
-    dietary_restrictions: pork
+    dietary_restrictions: 🐷
 
 ---

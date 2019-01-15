@@ -20,24 +20,29 @@ layout: default
             <small class="text-muted"><i>alt: {{ dish.name_alt }}</i></small>
             {% endif %} -->
 
-            <p class="card-text">
-              {{ dish.summary }}
-              {% if dish.wikipedia_en %}
-              <small>[<a href="{{ dish.wikipedia_en }}" class="card-link">Wikipedia</a>]</small>
-              {% endif %}
-            </p>
-            <p class="card-text">{{ dish.notes }}</p>
-
-            {% if dish.dietary_restrictions %}
-            <small class="text-muted">May contain {{ dish.dietary_restrictions }}.</small>
-            {% endif %}
+            <p class="card-text">{{ dish.summary }}</p>
+            <p class="card-text"><small class="text-muted">{{ dish.notes }}</small></p>
             
             <!-- bottom align -->
-            <div class="d-flex mt-auto">
-              <div>
-                {% for lang in dish.lang %}
-                <button type="button" class="btn btn-outline-primary" onclick="speak('{{ dish.name_tts_utterance }}', '{{ lang }}');">🗣{{ lang }}</button>
-                {% endfor %}
+            <div class="mt-auto">
+              <p class="card-text">{{ dish.dietary_restrictions }} {% if dish.dietary_warnings %}[{{ dish.dietary_warnings }}?]{% endif %}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  {% for lang in dish.lang %}
+                  {% if forloop.length == 1 %}
+                  <button type="button" class="btn btn-outline-primary" onclick="speak('{{ dish.name_tts_utterance }}', '{{ lang }}');">🗣Speak</button>
+                  {% else %}
+                  <button type="button" class="btn btn-outline-primary" onclick="speak('{{ dish.name_tts_utterance }}', '{{ lang }}');">
+                    {% if lang == "zh-HK" %}🗣Cantonese{% elsif lang == "zh-CN" %}🗣Mandarin{% else %}🗣{{ lang }}{% endif %}
+                  </button>
+                  {% endif %}
+                  {% endfor %}
+                </div>
+                <div>                  
+                  {% if dish.wikipedia_en %}
+                  <a href="{{ dish.wikipedia_en }}" class="btn btn-outline-secondary" style="font-family: serif">W</a>
+                  {% endif %}
+                </div>
               </div>
             </div>
           </div>  

@@ -13,7 +13,7 @@ dishes:
     summary: a baked or deep-fried snack made of salt cod, potatoes, eggs, parsley, and onion
     image: 440px-Bolinho_de_bacalhau.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Bolinhos_de_bacalhau
-    dietary_restrictions: egg
+    dietary_restrictions: 🥚
 
   - name: croquete
     name_tts_utterance: croquete
@@ -21,7 +21,7 @@ dishes:
     summary: a breaded baked or deep-fried snack with a cylindrical shape, often made of minced beef
     image: 360px-Croquettes_with_salad.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Croquette
-    dietary_restrictions: beef
+    dietary_restrictions: 🥩
 
   - name: rissole
     name_alt: risole
@@ -30,14 +30,14 @@ dishes:
     summary: a baked or deep-fried snack with a half-moon shape, often filled with shrimp in Béchamel sauce
     image: 360px-Risole1.JPG
     wikipedia_en: https://en.wikipedia.org/wiki/Rissole
-    dietary_restrictions: shrimp or beef
+    dietary_warnings: 🍤🥩
      
   - name: empada
     name_tts_utterance: empada
     lang: pt-PT
     summary: a small baked savory pie, often filled with chicken
     image: Empadinhas.jpg
-    dietary_restrictions: chicken
+    dietary_warnings: 🐓
      
   - name: coxinha
     name_tts_utterance: coxinha
@@ -45,7 +45,7 @@ dishes:
     image: 440px-Uma_coxinha.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Coxinha
     summary: a baked or deep-fried snack with a teardrop shape, made of shredded chicken meat
-    dietary_restrictions: chicken
+    dietary_restrictions: 🐓
       
   - name: chamuça
     name_tts_utterance: chamuça
@@ -53,5 +53,6 @@ dishes:
     summary: Indian samosa; a baked or deep-fried snack with a triangular shape, often with chicken or vegetable filling
     image: 500px-Chamuças.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Samosa
+    dietary_warnings: 🐓
     
 ---
