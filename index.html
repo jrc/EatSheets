@@ -5,11 +5,19 @@ layout: default
   <a class="navbar-brand" href="/">Eat Sheets</a>
 </header>
 
-<ul>
-{% for cuisine in site.cuisines %}
-  <li>
-    <h2><a href="{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h2>
-    <p>{{ cuisine.description }}</p>
-  </li>
-{% endfor %}
-</ul>
+<main id="content" role="main">
+  <div class="container">
+    <div class="row">
+      {% for cuisine in site.cuisines %}
+      <div class="col-md-12">
+        <div class="card my-3">
+          <div class="card-body">
+            <h5 class="card-title"><a href="{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h5>
+            <p class="card-text">{{ cuisine.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</main>
