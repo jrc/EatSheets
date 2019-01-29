@@ -11,7 +11,7 @@ dishes:
     name_tts_utterance: Bacalhau à Braga
     lang: pt-PT
     summary: Fried bacalhau, with sautéed potatoes, onions, and red and green peppers. From Braga.
-    image: 600px-Bacalhau_à_minhota.jpg
+    image: 600px-Bacalhau_a_minhota.jpg
     wikipedia_en: https://pt.wikipedia.org/wiki/Bacalhau_%C3%A0_Narcisa
     dietary_restrictions: 🐟
 
@@ -27,7 +27,7 @@ dishes:
     name_tts_utterance: Bacalhau à Gomes de Sá
     lang: pt-PT
     summary: Named after its creator, this bacalhau casserole consists of bacalhau, potatoes, eggs, onion, olives, olive oil. From Porto.
-    image: 440px-Bacalhau_à_Gomes_de_Sá.jpg
+    image: 440px-Bacalhau_a_Gomes_de_Sa.jpg
     wikipedia_en: https://en.wikipedia.org/wiki/Bacalhau_%C3%A0_Gomes_de_S%C3%A1
     dietary_restrictions: 🐟🥚
      
