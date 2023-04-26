@@ -12,7 +12,7 @@ layout: default
       <div class="col-md-12">
         <div class="card my-3">
           <div class="card-body">
-            <h5 class="card-title"><a href="{{ site.baseurl }}{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h5>
+            <h5 class="card-title"><a href="{{ cuisine.url | prepend: site.baseurl }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h5>
             <p class="card-text">{{ cuisine.description }}</p>
           </div>
         </div>
