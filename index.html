@@ -2,7 +2,7 @@
 layout: default
 ---
 <header class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="/">Eat Sheets</a>
+  <a class="navbar-brand" href="{{ site.url }}">Eat Sheets</a>
 </header>
 
 <main id="content" role="main">
@@ -12,7 +12,7 @@ layout: default
       <div class="col-md-12">
         <div class="card my-3">
           <div class="card-body">
-            <h5 class="card-title"><a href="{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h5>
+            <h5 class="card-title"><a href="{{ cuisine.baseurl }}{{ cuisine.url }}">{{ cuisine.title }}</a> {{ cuisine.flags }}</h5>
             <p class="card-text">{{ cuisine.description }}</p>
           </div>
         </div>
