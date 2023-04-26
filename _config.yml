@@ -1,7 +1,8 @@
 title: Eat Sheets
 author: John Chang
 url: https://jrcpl.us
-baseurl: "/EatSheets"
+baseurl: /EatSheets
+production_url: https://jrcpl.us/EatSheets
 
 collections:
   cuisines:
