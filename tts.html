@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function speakFromURLParams(text, localeCode) {
+            if (text && localeCode) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = localeCode;
+                utterance.rate = 0.8;
+
+                utterance.onerror = function (event) {
+                    console.error("SpeechSynthesisUtterance.onerror");
+                };
+
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // function populateVoiceList() {
+        //     const voices = window.speechSynthesis.getVoices();
+        //     const voice = voices.find(v => v.lang === localeCode) || voices.find(v => v.lang.startsWith(localeCode.split('-')[0]));
+        //     if (voice) {
+        //         const langName = new Intl.DisplayNames([navigator.language], { type: 'language' }).of(voice.lang.split('-')[0]);
+        //         const regionName = voice.lang.split('-')[1] ? ` (${voice.lang.split('-')[1]})` : '';
+        //         const voiceLangAndRegion = `${langName}${regionName}`;
+        //         document.getElementById('voiceLangAndRegion').innerText = voiceLangAndRegion;
+        //     }
+        // }
+
+        // populateVoiceList();
+        // window.speechSynthesis.onvoiceschanged = populateVoiceList;
+
+        // Extract URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const text = urlParams.get('text');
+        const localeCode = urlParams.get('locale');
+
+        window.addEventListener('load', function () {
+            document.title = `Speak “${text}”`;
+            document.getElementById('speakButton').innerText = document.title;
+
+            speakFromURLParams(text, localeCode);
+
+            const languageDisplay = new Intl.DisplayNames([navigator.language], { type: 'language' });
+            const friendlyLocaleName = `${languageDisplay.of(localeCode)}`;
+
+            document.getElementById('friendlyLocaleName').innerText = friendlyLocaleName;
+        });
+    </script>
+    <title>Speech Example</title>
+</head>
+
+<body>
+    <div>
+        <p><button type="button" id="speakButton" onclick="speakFromURLParams(text, localeCode);">🗣Speak</button></p>
+        <p>Locale: <span id="friendlyLocaleName"></span></p>
+        <!-- <p>Voice: <span id="voiceLangAndRegion"></span></p> -->
+    </div>
+
+</body>
+
+</html>
