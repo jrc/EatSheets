@@ -23,6 +23,8 @@
         // const localeDisplayName = languageDisplay.of(localeCode);
 
         const speakButton = document.getElementById('speak-button');
+        speakButton.innerText = `Say “${text}”`;
+        window.title = `Say “${text}”`;
 
         // Create SpeechSynthesisUtterance object
         const utterance = new SpeechSynthesisUtterance();
@@ -34,10 +36,13 @@
         utterance.addEventListener('end', () => {
             speakButton.disabled = false;
         });
-
         utterance.text = text;
-        speakButton.innerText = `Speak “${text}”`;
 
+        // Also enable the button if speech is interrupted/cancelled
+        speechSynthesis.addEventListener('voiceschanged', () => {
+            speakButton.disabled = false;
+        });
+        
         function speakText() {
             speechSynthesis.cancel(); // Stop any existing speech
             speechSynthesis.speak(utterance);
@@ -45,21 +50,7 @@
 
         // Start speaking immediately
         speakText();
-
-        // Also enable the button if speech is interrupted/cancelled
-        speechSynthesis.addEventListener('voiceschanged', () => {
-            speakButton.disabled = false;
-
-            const voices = window.speechSynthesis.getVoices();
-            const voice = voices.find(v => v.lang === localeCode) || voices.find(v => v.lang.startsWith(localeCode.split('-')[0]));
-            if (voice) {
-                const langName = new Intl.DisplayNames([navigator.language], { type: 'language' }).of(voice.lang.split('-')[0]);
-                const regionName = voice.lang.split('-')[1] ? ` (${voice.lang.split('-')[1]})` : '';
-                const voiceLangAndRegion = `${langName}${regionName}`;
-                speakButton.innerText = `Speak “${text}” with voice from “${voiceLangAndRegion}”`;
-            }
-        });
-
+        
         speakButton.addEventListener('click', () => {
             speakText();
         });
