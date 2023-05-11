@@ -5,61 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Example</title>
+</head>
+
+<body>
+    <div>
+        <button id="speak-button" disabled>Speak</button>
+    </div>
+
     <script>
-        function speakFromURLParams(text, localeCode) {
-            if (text && localeCode) {
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = localeCode;
-                utterance.rate = 0.8;
-
-                utterance.onerror = function (event) {
-                    console.error("SpeechSynthesisUtterance.onerror");
-                };
-
-                window.speechSynthesis.speak(utterance);
-            }
-        }
-
-        // function populateVoiceList() {
-        //     const voices = window.speechSynthesis.getVoices();
-        //     const voice = voices.find(v => v.lang === localeCode) || voices.find(v => v.lang.startsWith(localeCode.split('-')[0]));
-        //     if (voice) {
-        //         const langName = new Intl.DisplayNames([navigator.language], { type: 'language' }).of(voice.lang.split('-')[0]);
-        //         const regionName = voice.lang.split('-')[1] ? ` (${voice.lang.split('-')[1]})` : '';
-        //         const voiceLangAndRegion = `${langName}${regionName}`;
-        //         document.getElementById('voiceLangAndRegion').innerText = voiceLangAndRegion;
-        //     }
-        // }
-
-        // populateVoiceList();
-        // window.speechSynthesis.onvoiceschanged = populateVoiceList;
-
         // Extract URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const text = urlParams.get('text');
         const localeCode = urlParams.get('locale');
 
-        window.addEventListener('load', function () {
-            document.title = `Speak “${text}”`;
-            document.getElementById('speakButton').innerText = document.title;
+        // const languageDisplay = new Intl.DisplayNames([navigator.language], { type: 'language' });
+        // const localeDisplayName = languageDisplay.of(localeCode);
 
-            speakFromURLParams(text, localeCode);
+        const speakButton = document.getElementById('speak-button');
 
-            const languageDisplay = new Intl.DisplayNames([navigator.language], { type: 'language' });
-            const friendlyLocaleName = `${languageDisplay.of(localeCode)}`;
+        // Create SpeechSynthesisUtterance object
+        const utterance = new SpeechSynthesisUtterance();
+        utterance.lang = localeCode;
+        utterance.rate = 0.8;
+        utterance.addEventListener('start', () => {
+            speakButton.disabled = true;
+        });
+        utterance.addEventListener('end', () => {
+            speakButton.disabled = false;
+        });
 
-            document.getElementById('friendlyLocaleName').innerText = friendlyLocaleName;
+        utterance.text = text;
+        speakButton.innerText = `Speak “${text}”`;
+
+        function speakText() {
+            speechSynthesis.cancel(); // Stop any existing speech
+            speechSynthesis.speak(utterance);
+        }
+
+        // Start speaking immediately
+        speakText();
+
+        // Also enable the button if speech is interrupted/cancelled
+        speechSynthesis.addEventListener('voiceschanged', () => {
+            speakButton.disabled = false;
+
+            const voices = window.speechSynthesis.getVoices();
+            const voice = voices.find(v => v.lang === localeCode) || voices.find(v => v.lang.startsWith(localeCode.split('-')[0]));
+            if (voice) {
+                const langName = new Intl.DisplayNames([navigator.language], { type: 'language' }).of(voice.lang.split('-')[0]);
+                const regionName = voice.lang.split('-')[1] ? ` (${voice.lang.split('-')[1]})` : '';
+                const voiceLangAndRegion = `${langName}${regionName}`;
+                speakButton.innerText = `Speak “${text}” with voice from “${voiceLangAndRegion}”`;
+            }
+        });
+
+        speakButton.addEventListener('click', () => {
+            speakText();
         });
     </script>
-    <title>Speech Example</title>
-</head>
-
-<body>
-    <div>
-        <p><button type="button" id="speakButton" onclick="speakFromURLParams(text, localeCode);">🗣Speak</button></p>
-        <p>Locale: <span id="friendlyLocaleName"></span></p>
-        <!-- <p>Voice: <span id="voiceLangAndRegion"></span></p> -->
-    </div>
 
 </body>
 
